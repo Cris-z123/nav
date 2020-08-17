@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, viewport-fit=cover">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>前端导航</title>
+    <style type="text/css">
+        .icon {
+           width: 1em; height: 1em;
+           vertical-align: -0.15em;
+           fill: currentColor;
+           overflow: hidden;
+        }
+    </style>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="header">
+        <form class="searchForm" action="https://www.baidu.com/s" method="GET">
+            <input type="text" class="search">
+            <button type="submit">
+                <svg class="icon" aria-hidden="true">
+                    <use xlink:href="#icon-chakanhf"></use>
+                </svg>
+            </button>
+        </form>
+    </header>
+    <main class="main">
+        <ul class="siteList">
+            <!-- <li>
+                <a href="https://developer.mozilla.org">
+                    <div class="item">
+                        <div class="item-title">M</div>
+                        <div class="item-desc">developer.mozilla.org</div>
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a href="https://github.com">
+                    <div class="item">
+                            <div class="item-title">G</div>
+                            <div class="item-desc">github.com</div>
+                    </div>
+                </a>
+            </li> -->
+            <li class="last">
+                <div class="item">
+                    <div class="addButton">
+                        <svg class="icon" aria-hidden="true">
+                            <use xlink:href="#icon-xinzeng"></use>
+                        </svg>
+                    </div>
+                    <div class="item-desc">添加快捷方式</div>
+                </div>
+            </li>
+        </ul>
+    </main>
+
+
+    <script src="//at.alicdn.com/t/font_1817444_m39tpm998v.js"></script>
+    <script src="https://s0.pstatp.com/cdn/expire-1-M/jquery/1.7.2/jquery.min.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>

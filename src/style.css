@@ -1,0 +1,105 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+*:before, *:after {
+    box-sizing: border-box;
+}
+ul, li {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+    color: inherit;
+}
+body {
+    background: #eee;
+}
+
+.searchForm {
+    display: flex;
+    justify-content: center;
+    margin: 35px;
+}
+.searchForm .search {
+    width: 100%;
+    text-indent: 30px;
+    line-height: 35px;
+    margin-right: 10px;
+    border-radius: 50px;
+    border: 1px solid #ddd;
+    border: none;
+    outline: none;
+    box-shadow: 1px 1px 2px 1px rgba(0, 0, 255, .2);
+}
+.searchForm > button {
+    width: 100px;
+    outline:none;
+    background-color: #0282B9;
+    border-radius: 50px;
+    border: 1px solid #ddd;
+    border: none;
+    box-shadow: 1px 1px 2px 1px rgba(0, 0, 255, .2);
+}
+.searchForm > button > .icon {
+    font-size: 30px;
+}
+@media(min-width: 500px) {
+    .searchForm .search {
+        min-width: 50%;
+        margin-left: 400px;
+        height: 40px;
+    }
+    .searchForm > button {
+        min-width: 100px;
+        margin-right: 400px;
+    }
+    .searchForm > button > .icon {
+        font-size: 30px;
+    }
+}
+
+.main > ul {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 10px;
+}
+.item {
+    position: relative;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    width: 150px;
+    margin: 10px;
+    background: #fff;
+    border-radius: 10px;
+    border: 2px solid #ccc;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 255, .2);
+    cursor: pointer;
+}
+.item .item-title {
+    font-size: 50px;
+}
+.item .item-desc {
+    padding-bottom: 10px;
+    font-size: 14px;
+}
+.item .close {
+    position: absolute;
+    top: 0;
+    right: 5px;
+    font-size: 24px;
+}
+@media(min-width: 500px) {
+    .item .close {
+        display: none;
+    }
+    .item:hover .close {
+        display: block;
+    }
+}
+.item .addButton {
+    font-size: 50px;
+}
